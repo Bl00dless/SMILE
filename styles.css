@@ -122,10 +122,15 @@ table {
 }
 
 .social {
+    display: none;
     background: black;
     float: left;
     width: 100%;
     border-bottom: 1px solid grey;
+}
+
+.top-href >li:first-child+li+li {
+
 }
 
 .sochead {
@@ -212,6 +217,10 @@ table {
      font-family: Conv_HelveticaLTStd-BoldCondObl;
  }
 
+.list >li>a:hover {
+    color: red;
+    text-decoration: underline;
+}
  .list >li >a {
      text-decoration: none;
      font-size: 14pt;
@@ -228,12 +237,51 @@ table {
      margin: 15px 1px;
  }
  .langpop {
-     background: grey;
+     background: #ffffff;
      height: 450px;
      width: 250px;
      float: left;
-     border: 1px solid black;
+     border: 1px solid grey;
  }
+
+.langpop {
+    width: 196px;
+    padding: 40px 0 50px;
+    position: relative;
+}
+.langpop {
+    display: none;
+    width: 250px;
+    padding: 15px 0 0;
+    background: url("../images/1.png") 0 0 no-repeat;
+
+}
+.langpop .content {
+    border-bottom: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    padding: 20px 20px;
+}
+.langpop .content p .shop {float: right; background: #f8f8f8
+}
+\\----
+.basketpop {
+    background: #ffffff;
+    height: 450px;
+    width: 250px;
+    float: right;
+    border: 1px solid grey;
+}
+
+.content{
+    height: 800px;
+}
+.footer {
+    float: left;
+}
+.footer > ul > li {
+    display: inline-block;
+}
 .clear{
     clear: both;
     overflow: hidden;
