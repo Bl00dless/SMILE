@@ -384,6 +384,25 @@ input[type="radio"].css-checkbox.checked + label.css-label {
 input[type="radio"].css-checkbox:checked + label.css-label {
     background: url("Imgs/buttons/radio-cheked.png") 0 -3px no-repeat;
 }
+#popupWrapper{
+    position: fixed;
+    top: 0;
+    width: 100%!important;
+    height: 100%!important;
+    left: 0;
+    background: rgba(150,150,132,0.29);
+    z-index: 99999;
+    display: none;
+}
+#popupWrapper .wcontent {
+    width: 250px;
+    height: 250px;
+    background: #ffffff;
+    margin: 150px auto;
+}
+
+
+
 
 .clear{
     clear: both;

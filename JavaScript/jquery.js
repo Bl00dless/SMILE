@@ -33,6 +33,14 @@ $(document).ready(function() {
 
 
 
+    $('#clickme').click(function () {
+        $('#popupWrapper').show();
+    })
+    $('#clickmeclose').click(function(){
+        $('#popupWrapper').hide();
+    })
+
+
    $(".lang, .langpop").mouseenter(function()
    {
        $(".langpop").show();
