@@ -208,12 +208,12 @@ table {
 }
 
 .list {
-    margin: 0 auto;
+    margin:  auto;
     float: left;
 }
  .list >li {
      display: inline-block;
-     padding: 0 10px;
+     padding: 10px 10px;
      font-family: Conv_HelveticaLTStd-BoldCondObl;
  }
 
@@ -236,33 +236,38 @@ table {
      float: left;
      margin: 15px 1px;
  }
- .langpop {
-     background: #ffffff;
-     height: 450px;
-     width: 250px;
-     float: left;
-     border: 1px solid grey;
- }
+ /*.langpop {*/
+     /*background: #ffffff;*/
+     /*height: 300px;*/
+     /*width: 250px;*/
+     /*float: left;*/
+     /*border: 1px solid grey;
+     }*/
+
+
 
 .langpop {
-    width: 196px;
-    padding: 40px 0 50px;
-    position: relative;
-}
-.langpop {
+    z-index: 10000;
+    position: absolute;
+    top: 110px;
+    left: 20px;
     display: none;
     width: 250px;
     padding: 15px 0 0;
-    background: url("../images/1.png") 0 0 no-repeat;
+    background: url("Imgs/images/langtriangle_03.jpg") 0 0 no-repeat #ffffff;
 
 }
-.langpop .content {
-    border-bottom: 1px solid #cccccc;
-    border-left: 1px solid #cccccc;
-    border-right: 1px solid #cccccc;
+.shop{
+    font-family: Conv_HelveticaLTStd-BoldCond;
+}
+
+.langpop .lcontent {
+    border-bottom: 1px solid #e9e9e9;
+    border-left: 1px solid #e9e9e9;
+    border-right: 1px solid #e9e9e9;
     padding: 20px 20px;
 }
-.langpop .content p .shop {float: right; background: #f8f8f8
+.langpop .lcontent p .shop {float: right; background: #f8f8f8
 }
 \\----
 .basketpop {
@@ -274,7 +279,17 @@ table {
 }
 
 .content{
-    height: 800px;
+    float: left;
+    height: 700px;
+}
+.mancontent{
+    position: absolute;
+    z-index: 10000;
+    display: none;
+    background: #ffffff;
+    top:190px;
+
+
 }
 .footer {
     float: left;
@@ -282,6 +297,94 @@ table {
 .footer > ul > li {
     display: inline-block;
 }
+.bxslider{
+    ;
+    width: 50%;
+}
+.bx-wrapper{
+    max-width: 58%!important;
+}
+.borderRadiusTp{
+    width: 100px!important;
+}
+.bxslider img {
+    float: left;
+}
+
+
+
+.input-box{
+    width: 300px;
+    margin: 10px auto;
+
+}
+/*checkbuttons*/
+input[type="checkbox"].css-checkbox + label.css-label {
+    padding-left:20px;
+    height:15px;
+    display:inline-block;
+    line-height:15px;
+    font-size:15px;
+    vertical-align:middle;
+    cursor:pointer;
+    background: url("Imgs/buttons/checkbox-unchecked.png") 0 0 no-repeat;
+}
+label.css-label {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+input[type="checkbox"].css-checkbox.checked + label.css-label {
+    background: url("Imgs/buttons/checkbox-unchecked.png") 0 13px no-repeat;
+}
+input[type="checkbox"].css-checkbox:checked + label.css-label {
+    background: url("Imgs/buttons/checkbox-checked.png") 0 0 no-repeat;
+}
+
+/*radio_buttons*/
+input[type="checkbox"].css-checkbox,
+input[type="radio"].css-checkbox {
+    display: inline-block;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    border:0 !important;
+    line-height: 0 !important;
+    overflow: hidden;
+    position: absolute;
+    left: -20px;
+    /*   for ie8   */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
+.interactionWindow input[type="radio"].css-checkbox {top:0;}
+input[type="radio"].css-checkbox + label.css-label {
+    padding-left:24px;
+    display:inline-block;
+    cursor:pointer;
+    background: url("Imgs/buttons/radio-uncheked.png") 0 -3px no-repeat;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+label.css-label {    background:url("Imgs/buttons/radio-uncheked.png") 0 -3px no-repeat;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+input[type="radio"].css-checkbox.checked + label.css-label {
+    background: url("Imgs/buttons/radio-cheked.png") 0 -3px no-repeat;
+}
+input[type="radio"].css-checkbox:checked + label.css-label {
+    background: url("Imgs/buttons/radio-cheked.png") 0 -3px no-repeat;
+}
+
 .clear{
     clear: both;
     overflow: hidden;
