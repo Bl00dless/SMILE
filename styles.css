@@ -280,7 +280,7 @@ table {
 
 .content{
     float: left;
-    height: 700px;
+    height: 900px;
 }
 .mancontent{
     position: absolute;
@@ -292,10 +292,63 @@ table {
 
 }
 .footer {
+    width: 100%;
+    background: black;
     float: left;
+    font-family: Conv_HelveticaLTStd-BoldCondObl;
+    font-size: 13px;
+
 }
 .footer > ul > li {
     display: inline-block;
+    float: left;
+
+}
+
+.footertext > li > a {
+    text-decoration: none;
+    color: grey;
+
+}
+
+.footertext > li > a:hover {
+    color: #ffffff;
+}
+
+
+.footer > ul:first-child > li:first-child {
+margin: 0 0 0 200px;
+
+}
+
+.footertext >li>a {
+
+}
+
+.footertext > li:first-child
+{
+    margin: 0 0 0 250px;
+
+}
+.footertext > li:first-child+li
+{
+    margin: 0 0 0 95px;
+
+}
+.footertext > li:first-child+li+li
+{
+    margin: 0 0 0 80px;
+
+}
+.footertext > li:first-child+li+li+li
+{
+    margin: 0 0 0 75px;
+
+}
+.footertext > li:first-child+li+li+li+li
+{
+    margin: 0 0 0 50px;
+
 }
 .bxslider{
     ;
@@ -310,7 +363,6 @@ table {
 .bxslider img {
     float: left;
 }
-
 
 
 .input-box{

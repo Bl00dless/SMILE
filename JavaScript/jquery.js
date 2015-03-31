@@ -41,7 +41,7 @@ $(document).ready(function() {
     })
 
 
-   $(".lang, .langpop").mouseenter(function()
+   $(".lang > li > a, .langpop").mouseenter(function()
    {
        $(".langpop").show();
    });
