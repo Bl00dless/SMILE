@@ -75,7 +75,15 @@ $(document).ready(function() {
             $("div", this).hide(100);
         });
 
-
+    $('#email').blur(function(){
+        debugger;
+       if ('#email'.val() !== /^[A-Za-z0-9._]+@[A-Za-z0-9]+.[A-Za-z]{2,4}$/) {
+           $(this).css('background', 'red');
+       }
+        else {
+           $(this).css('background', 'green');
+       }
+    })
 
 
     //var user = prompt('Whos here?','');
